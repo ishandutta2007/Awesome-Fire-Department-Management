@@ -28,7 +28,7 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
-- [SaaS/Hosted Platforms](#saas-products)
+- [SaaS/Hosted Platforms](#saashosted-platforms)
 
 - [Open-Source GitHub Projects](#open-source-github-projects)
 
@@ -40,63 +40,18 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## SaaS/Hosted Platforms
 
-- **[ESO Fire RMS](https://www.eso.com/)**  
-
-  Comprehensive fire and EMS records management, incident reporting, analytics, and operational tools used by thousands of departments.
-
-
-
-- **[Firehouse Software](https://www.firehousesoftware.com/)**  
-
-  Long-standing fire records management and incident reporting system focused on documentation, training continuity, and department operations.
-
-
-
-- **[ImageTrend Elite](https://www.imagetrend.com/)**  
-
-  AI-assisted fire and EMS platform covering incident reporting, inspections, pre-plans, scheduling, compliance (including NERIS), and unified analytics.
-
-
-
-- **[Emergency Reporting](https://emergencyreporting.com/)**  
-
-  Cloud-based fire department records management and NFIRS reporting software widely used for run reporting and operational accountability.
-
-
-
-- **[Vector Solutions / TargetSolutions](https://www.vectorsolutions.com/)**  
-
-  Training, compliance, and professional development platform commonly used by fire departments for certifications and continuing education.
-
-
-
-- **[Operative IQ](https://www.operativeiq.com/)**  
-
-  Public safety operations software for inventory, assets, fleet, narcotics control, and supply management in fire and EMS agencies.
-
-
-
-- **[First Due](https://www.firstdue.com/)**  
-
-  Modern fire and EMS platform focused on pre-incident planning, response, and operational readiness tools.
-
-
-
-- **[StreetWise CAD](https://www.streetwisecad.com/)**  
-
-  Computer-aided dispatch and mapping solutions tailored for fire and emergency response coordination.
-
-
-
-- **[FirePrograms](https://www.fireprograms.com/)**  
-
-  Fire department management software covering records, reporting, and administrative functions.
-
-
-
-- **[StationSmarts](https://www.stationsmarts.com/)**  
-
-  Fire department management focused on scheduling, certifications, apparatus, inventory, and compliance tracking.
+| Platform | Description & Focus | Starting Pricing | Free Tier / Free Trial Limits |
+| :--- | :--- | :--- | :--- |
+| **[ESO Fire RMS](https://www.eso.com/)** | Comprehensive fire and EMS records management, incident reporting, analytics, and operational tools used by thousands of departments. | Starts at ~$3,500 – $5,000/year (base agency tier; scales by call volume and selected modules) | No free tier or public trial (0 days; live guided demo available upon request) |
+| **[Firehouse Software](https://www.firehousesoftware.com/)** | Long-standing legacy fire records management and incident reporting system (acquired by ESO; transitioning to ESO Fire RMS). | Originally ~$1,200 – $2,500/year base licensing (legacy product transitioned to ESO Fire RMS pricing) | No free tier or trial (0 days; legacy software transitioned to ESO platform) |
+| **[ImageTrend Elite](https://www.imagetrend.com/)** | AI-assisted fire and EMS platform covering incident reporting, inspections, pre-plans, scheduling, compliance (including NERIS), and unified analytics. | Starts at ~$5,000 – $10,000/year (Essential tier; enterprise deployments scale to $15,000+/year) | No free tier or self-service trial (0 days; sales consultation and live demo on request) |
+| **[Emergency Reporting](https://emergencyreporting.com/)** | Cloud-based fire department records management and NFIRS reporting software widely used for run reporting and operational accountability (now part of ESO). | Starts at ~$850/month (~$10,200/year base tier; volunteer agency packages from ~$1,500 – $3,000/year) | No free tier or public trial (0 days; guided product demo on request) |
+| **[Vector Solutions / TargetSolutions](https://www.vectorsolutions.com/)** | Training, compliance, scheduling, and professional development platform commonly used by fire departments for certifications and continuing education. | Starts at ~$25 – $40/user/year (Volunteer Edition package starts at ~$1,200/year; Vector Scheduling module from ~$3–$5/user/month) | 30-day free trial (available for Vector Scheduling module; full platform offers guided demo & free Vector Cares courses) |
+| **[Operative IQ](https://www.operativeiq.com/)** | Public safety operations software for inventory, assets, fleet, narcotics control, and supply management in fire and EMS agencies. | Starts at ~$185/month (~$2,220/year for core inventory/operations module) | No free tier or trial (0 days; personalized live demo available upon request) |
+| **[First Due](https://www.firstdue.com/)** | Modern fire and EMS platform focused on pre-incident planning, response, community connect, and operational readiness tools. | Starts at ~$3,000 – $6,000/year base subscription (typical implementations $5,000 – $20,000/year depending on modules/stations) | No free tier or public trial (0 days; interactive product walkthrough and demo on request) |
+| **[StreetWise CAD](https://www.streetwisecad.com/)** | Computer-aided dispatch and mapping solutions tailored for fire and emergency response coordination. | Starts at $180 – $210/apparatus/year (Companion responder smartphone app at $36/user/year or $3/month) | No self-service trial (0 days; free live interactive web-based video demo available upon request) |
+| **[FirePrograms](https://www.fireprograms.com/)** | Fire department management software covering records, reporting, and administrative functions. | SceneConnect starts at $1,032/year (+$525 setup); Station Manager starts at $2,071/year (+$705 setup) | No free tier or trial (0 days; live product demonstration available upon request) |
+| **[StationSmarts](https://www.stationsmarts.com/)** | Fire department management focused on scheduling, certifications, apparatus, inventory, and compliance tracking. | Starts at ~$3,000 – $10,500/year (includes legacy data migration and full 1-year 100% money-back satisfaction guarantee) | 365-day 100% money-back satisfaction guarantee (no standalone free trial, 0 days; interactive demo on request) |
 
 
 
