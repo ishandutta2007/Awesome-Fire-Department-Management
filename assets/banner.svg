@@ -1,0 +1,210 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="100%" height="260">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f141d"/>
+      <stop offset="50%" stop-color="#161c28"/>
+      <stop offset="100%" stop-color="#0b0e14"/>
+    </linearGradient>
+
+    <!-- Fire / Ember Gradient -->
+    <linearGradient id="fireGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF3D00"/>
+      <stop offset="45%" stop-color="#FF9100"/>
+      <stop offset="85%" stop-color="#FFD600"/>
+      <stop offset="100%" stop-color="#FFF59D"/>
+    </linearGradient>
+
+    <!-- Border Glow Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF3D00">
+        <animate attributeName="stop-color" values="#FF3D00;#FF9100;#00E5FF;#FF3D00" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#FF9100">
+        <animate attributeName="stop-color" values="#FF9100;#00E5FF;#FF3D00;#FF9100" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#00E5FF">
+        <animate attributeName="stop-color" values="#00E5FF;#FF3D00;#FF9100;#00E5FF" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Glowing Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="flameGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur1" />
+      <feGaussianBlur stdDeviation="16" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      font-weight: 900;
+      font-size: 36px;
+      letter-spacing: -0.5px;
+    }
+    .subtitle-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      font-weight: 500;
+      font-size: 14.5px;
+      letter-spacing: 0.3px;
+      fill: #B0BEC5;
+    }
+    .badge-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .grid-line {
+      stroke: #ffffff;
+      stroke-opacity: 0.04;
+      stroke-width: 1;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 0.85; }
+      50% { transform: scale(1.06); opacity: 1; }
+    }
+    @keyframes radarWave {
+      0% { r: 10px; opacity: 0.8; stroke-width: 2.5; }
+      100% { r: 95px; opacity: 0; stroke-width: 0.5; }
+    }
+    @keyframes floatParticle {
+      0% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
+      50% { transform: translateY(-25px) translateX(10px); opacity: 0.9; }
+      100% { transform: translateY(-50px) translateX(-5px); opacity: 0; }
+    }
+    .radar-ring-1 {
+      animation: radarWave 3.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+      transform-origin: 100px 130px;
+    }
+    .radar-ring-2 {
+      animation: radarWave 3.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+      animation-delay: 1.75s;
+      transform-origin: 100px 130px;
+    }
+    .flame-core {
+      animation: pulse 2.5s ease-in-out infinite;
+      transform-origin: 100px 130px;
+    }
+    .particle {
+      fill: #FF9100;
+      animation: floatParticle 3s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Banner Background Container -->
+  <rect x="2" y="2" width="896" height="256" rx="16" fill="url(#bgGrad)" stroke="url(#borderGrad)" stroke-width="2.5" />
+
+  <!-- Background Grid Pattern -->
+  <g>
+    <line x1="0" y1="52" x2="900" y2="52" class="grid-line" />
+    <line x1="0" y1="104" x2="900" y2="104" class="grid-line" />
+    <line x1="0" y1="156" x2="900" y2="156" class="grid-line" />
+    <line x1="0" y1="208" x2="900" y2="208" class="grid-line" />
+    <line x1="200" y1="0" x2="200" y2="260" class="grid-line" />
+    <line x1="380" y1="0" x2="380" y2="260" class="grid-line" />
+    <line x1="560" y1="0" x2="560" y2="260" class="grid-line" />
+    <line x1="740" y1="0" x2="740" y2="260" class="grid-line" />
+  </g>
+
+  <!-- Ambient Glow Behind Flame -->
+  <circle cx="100" cy="130" r="70" fill="#FF3D00" opacity="0.15" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.12;0.25;0.12" dur="3s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Radar Pulse Rings -->
+  <circle cx="100" cy="130" r="10" fill="none" stroke="#FF5722" class="radar-ring-1" />
+  <circle cx="100" cy="130" r="10" fill="none" stroke="#FFAB00" class="radar-ring-2" />
+
+  <!-- Animated Floating Embers/Particles -->
+  <circle cx="90" cy="115" r="2" class="particle" style="animation-delay: 0.2s;" />
+  <circle cx="112" cy="105" r="2.5" class="particle" style="animation-delay: 1.1s;" />
+  <circle cx="105" cy="90" r="1.8" class="particle" style="animation-delay: 1.8s;" />
+  <circle cx="85" cy="100" r="1.5" class="particle" style="animation-delay: 2.3s;" />
+
+  <!-- Fire Department Icon Shield & Flame Badge -->
+  <g class="flame-core" filter="url(#flameGlow)">
+    <!-- Maltese Cross Shield Base -->
+    <path d="M 100 82 
+             C 107 98, 122 100, 134 94 
+             C 128 108, 132 122, 146 130 
+             C 132 138, 128 152, 134 166 
+             C 122 160, 107 162, 100 178 
+             C 93 162, 78 160, 66 166 
+             C 72 152, 68 138, 54 130 
+             C 68 122, 72 108, 66 94 
+             C 78 100, 93 98, 100 82 Z" 
+          fill="#1A2332" stroke="url(#fireGrad)" stroke-width="2.5" stroke-linejoin="round" />
+    
+    <!-- Central Dynamic Flame -->
+    <path d="M 100 102 
+             C 108 116, 118 124, 114 138 
+             C 111 148, 103 154, 100 156 
+             C 97 154, 89 148, 86 138 
+             C 82 124, 92 116, 100 102 Z" 
+          fill="url(#fireGrad)" />
+    
+    <!-- Inner White-Hot Core -->
+    <path d="M 100 122 
+             C 104 130, 108 135, 106 144 
+             C 104 150, 100 154, 100 154 
+             C 100 154, 96 150, 94 144 
+             C 92 135, 96 130, 100 122 Z" 
+          fill="#FFFFFF" opacity="0.9" />
+  </g>
+
+  <!-- Content Group -->
+  <g transform="translate(195, 0)">
+    <!-- Category Pill Badges -->
+    <g transform="translate(0, 40)">
+      <!-- Badge 1: CAD & RMS -->
+      <rect x="0" y="0" width="94" height="22" rx="11" fill="#FF3D00" fill-opacity="0.18" stroke="#FF3D00" stroke-width="1" />
+      <text x="47" y="15" text-anchor="middle" fill="#FF7043" class="badge-text">CAD &amp; RMS</text>
+
+      <!-- Badge 2: NERIS / NFIRS -->
+      <rect x="104" y="0" width="126" height="22" rx="11" fill="#00E5FF" fill-opacity="0.15" stroke="#00E5FF" stroke-width="1" />
+      <text x="167" y="15" text-anchor="middle" fill="#00E5FF" class="badge-text">NERIS &amp; NFIRS</text>
+
+      <!-- Badge 3: INCIDENT DISPATCH -->
+      <rect x="240" y="0" width="155" height="22" rx="11" fill="#FFD600" fill-opacity="0.15" stroke="#FFD600" stroke-width="1" />
+      <text x="317.5" y="15" text-anchor="middle" fill="#FFE082" class="badge-text">INCIDENT RESPONSE</text>
+
+      <!-- Badge 4: OPEN SOURCE & SAAS -->
+      <rect x="405" y="0" width="160" height="22" rx="11" fill="#00E676" fill-opacity="0.15" stroke="#00E676" stroke-width="1" />
+      <text x="485" y="15" text-anchor="middle" fill="#69F0AE" class="badge-text">SAAS &amp; OPEN-SOURCE</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="112" class="title-text" fill="#FFFFFF">
+      Awesome Fire Department
+      <tspan fill="url(#fireGrad)"> Management</tspan>
+    </text>
+
+    <!-- Subtitle / Mission Statement -->
+    <text x="0" y="148" class="subtitle-text">
+      Curated ecosystem of software platforms, incident CAD, records RMS, and self-hosted tools
+    </text>
+    <text x="0" y="172" class="subtitle-text" fill="#78909C" font-size="13px">
+      🚒 Shift Scheduling • 🚨 Live Dispatch • 📋 Compliance Analytics • 🗺️ Situational Awareness
+    </text>
+
+    <!-- Bottom Feature Indicator Line -->
+    <g transform="translate(0, 204)">
+      <line x1="0" y1="0" x2="650" y2="0" stroke="#263238" stroke-width="1.5" />
+      <line x1="0" y1="0" x2="160" y2="0" stroke="url(#fireGrad)" stroke-width="2.5">
+        <animate attributeName="x1" values="0;490;0" dur="6s" repeatCount="indefinite" />
+        <animate attributeName="x2" values="160;650;160" dur="6s" repeatCount="indefinite" />
+      </line>
+    </g>
+  </g>
+</svg>
